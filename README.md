@@ -2,8 +2,7 @@
 
 A simple bash script that syncs up two project without worrying about symlinks errors.
 
-<ul>
-<li><h1>Installation</h1></li>
+## Installation
 
 ```bash
 git clone https://github.com/qxb3/termux-sync.git
@@ -11,12 +10,11 @@ cd termux-sync
 bash install.sh
 ```
 
-<li><h1>Usage</h1></li>
+## Usage
 
 ```bash
 termux-sync projects/my-awsome-website/ storage/shared/websites/
 ```
-</ul>
 
 # Author
 
