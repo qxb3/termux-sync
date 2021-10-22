@@ -11,14 +11,14 @@ dir2=$( realpath $2 )
 rsync -au --progress --delete --exclude "node_modules" "$dir1/" "$dir2/"
 rsync -au --progress --delete --exclude "node_modules" "$dir2/" "$dir1/"
 
-function listen {
+function sync {
   inotifywait -r -e modify,create,delete,move $1 && \
     rsync -au --progress --delete --exclude node_modules $1 $2
 }
 
 while true; do
-  listen "$dir1/" "$dir2/" &
-  listen "$dir2/" "$dir1/"
+  sync "$dir1/" "$dir2/" &
+  sync "$dir2/" "$dir1/"
   wait
 done
 
