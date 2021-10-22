@@ -1,12 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  const name = 'qxb3'
-  
+function App(props) {
+  console.log(props.name)
+
   return (
-    <h1>name: {name}</h1>
-  );
+    <div class="App">
+      <h1>{props.name}</h1>
+    </div>
+  )
 }
 
 export default App;
