@@ -10,10 +10,12 @@ cd termux-sync
 bash install.sh
 ```
 
-## Usage
+## Example Usage
 
 ```bash
-termux-sync projects/my-awsome-website/ storage/shared/websites/
+npx create-react-app my-awsome-website
+rsync -avu --progress --exclude node_modules my-awsome-website storage/shared/your-directory
+termux-sync my-awsome-website/ storage/shared/your-directory/my-awsome-website/
 ```
 
 # Author
