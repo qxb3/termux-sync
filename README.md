@@ -24,10 +24,3 @@ cp -r my-awsome-website storage/shared/your-directory
 # Sync them up!
 termux-sync my-awsome-website/ storage/shared/your-directory/my-awsome-website/
 ```
-
-# Author
-
-<ul>
-  <li><a href="https://github.com/qxb3">Github</a></br></li>
-  <li><a href="https://www.facebook.com/leah.berenio">Facebook</a></li>
-</ul>
