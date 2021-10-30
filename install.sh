@@ -8,5 +8,3 @@ fi
 if [ ! -f $PREFIX/bin/inotifywait ]; then
   apt install inotify-tools
 fi
-
-echo "Done!"
